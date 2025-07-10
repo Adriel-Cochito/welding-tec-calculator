@@ -92,7 +92,7 @@ const WeldingTecVolumeCalculator: React.FC = () => {
                 Volume Total do Tanque
               </h3>
               <p className="text-3xl font-bold text-blue-600">
-                {getTotalVolume().toFixed(2)} m³
+                {(getTotalVolume() * 1000).toFixed(2)} L
               </p>
               <p className="text-sm text-blue-700 mt-1">
                 {shapes.length} forma{shapes.length !== 1 ? 's' : ''} adicionada{shapes.length !== 1 ? 's' : ''}

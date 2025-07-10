@@ -48,7 +48,7 @@ const ShapeCard: React.FC<ShapeCardProps> = ({
           <div className="mt-4 p-3 bg-gray-50 rounded-md">
             <p className="text-sm text-gray-600">Volume:</p>
             <p className="text-lg font-semibold text-blue-600">
-              {(shape.volume || 0).toFixed(2)} m³
+              {((shape.volume || 0) * 1000).toFixed(2)} L
             </p>
           </div>
         </div>
