@@ -16,7 +16,10 @@ const AddShapeForm: React.FC<AddShapeFormProps> = ({
 }) => {
   return (
     <div className="card mb-6">
+        <p>Adicione varias formas geométricas para calcular o volume total do tanque</p>
+        <br />
       <h2 className="text-xl font-semibold mb-4">Adicionar Forma</h2>
+      
       <div className="flex gap-4 items-end">
         <div>
           <label className="block text-sm font-medium mb-2">Tipo de Forma</label>
