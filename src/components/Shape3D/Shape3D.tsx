@@ -13,7 +13,7 @@ const Shape3D: React.FC<Shape3DProps> = ({ type, dimensions, isInverted = false 
   const centerY = 150;
 
   const renderCylinder = () => {
-    const cylRadius = Math.max((dimensions.radius || 0) * scale, 10);
+    const cylRadius = Math.max(((dimensions.diameter || 0) / 2) * scale, 10);
     const cylHeight = Math.max((dimensions.height || 0) * scale, 20);
     
     return (
@@ -56,7 +56,7 @@ const Shape3D: React.FC<Shape3DProps> = ({ type, dimensions, isInverted = false 
   };
 
   const renderCone = () => {
-    const coneRadius = Math.max((dimensions.radius || 0) * scale, 10);
+    const coneRadius = Math.max(((dimensions.diameter || 0) / 2) * scale, 10);
     const coneHeight = Math.max((dimensions.height || 0) * scale, 20);
     
     const topY = isInverted ? centerY + coneHeight/2 : centerY - coneHeight/2;
@@ -91,8 +91,8 @@ const Shape3D: React.FC<Shape3DProps> = ({ type, dimensions, isInverted = false 
   };
 
   const renderConicReduction = () => {
-    const topRadius = Math.max((dimensions.topRadius || 0) * scale, 10);
-    const bottomRadius = Math.max((dimensions.bottomRadius || 0) * scale, 10);
+    const topRadius = Math.max(((dimensions.topDiameter || 0) / 2) * scale, 10);
+    const bottomRadius = Math.max(((dimensions.bottomDiameter || 0) / 2) * scale, 10);
     const reductionHeight = Math.max((dimensions.height || 0) * scale, 20);
     
     return (

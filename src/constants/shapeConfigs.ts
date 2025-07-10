@@ -4,21 +4,21 @@ export const shapeConfigs: ShapeConfig[] = [
   {
     type: 'cylinder',
     displayName: 'Cilindro',
-    defaultDimensions: { diameter: 2000, height: 2000 }
+    defaultDimensions: { diameter: 200, height: 200 }
   },
   {
     type: 'cone',
     displayName: 'Cone',
-    defaultDimensions: { diameter: 2000, height: 2000 }
+    defaultDimensions: { diameter: 200, height: 200 }
   },
   {
     type: 'cube',
     displayName: 'Cubo',
-    defaultDimensions: { width: 2000, height: 2000, depth: 2000 }
+    defaultDimensions: { width: 200, height: 200, depth: 200 }
   },
   {
     type: 'conicReduction',
     displayName: 'Redução Cônica',
-    defaultDimensions: { topDiameter: 3000, bottomDiameter: 2000, height: 2000 }
+    defaultDimensions: { topDiameter: 300, bottomDiameter: 200, height: 200 }
   }
 ];

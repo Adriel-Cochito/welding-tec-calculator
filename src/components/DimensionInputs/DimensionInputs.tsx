@@ -22,21 +22,21 @@ const DimensionInputs: React.FC<DimensionInputsProps> = ({
   const renderCylinderInputs = () => (
     <div className="grid grid-cols-2 gap-4">
       <div>
-        <label className="block text-sm font-medium mb-1">Raio (m)</label>
+        <label className="block text-sm font-medium mb-1">Diâmetro (mm)</label>
         <input
           type="number"
-          step="0.1"
+          step="1"
           min="0"
-          value={shape.dimensions.radius || ''}
-          onChange={(e) => handleInputChange('radius', e.target.value)}
+          value={shape.dimensions.diameter || ''}
+          onChange={(e) => handleInputChange('diameter', e.target.value)}
           className="input-field"
         />
       </div>
       <div>
-        <label className="block text-sm font-medium mb-1">Altura (m)</label>
+        <label className="block text-sm font-medium mb-1">Altura (mm)</label>
         <input
           type="number"
-          step="0.1"
+          step="1"
           min="0"
           value={shape.dimensions.height || ''}
           onChange={(e) => handleInputChange('height', e.target.value)}
@@ -50,21 +50,21 @@ const DimensionInputs: React.FC<DimensionInputsProps> = ({
     <div className="space-y-4">
       <div className="grid grid-cols-2 gap-4">
         <div>
-          <label className="block text-sm font-medium mb-1">Raio da Base (m)</label>
+          <label className="block text-sm font-medium mb-1">Diâmetro da Base (mm)</label>
           <input
             type="number"
-            step="0.1"
+            step="1"
             min="0"
-            value={shape.dimensions.radius || ''}
-            onChange={(e) => handleInputChange('radius', e.target.value)}
+            value={shape.dimensions.diameter || ''}
+            onChange={(e) => handleInputChange('diameter', e.target.value)}
             className="input-field"
           />
         </div>
         <div>
-          <label className="block text-sm font-medium mb-1">Altura (m)</label>
+          <label className="block text-sm font-medium mb-1">Altura (mm)</label>
           <input
             type="number"
-            step="0.1"
+            step="1"
             min="0"
             value={shape.dimensions.height || ''}
             onChange={(e) => handleInputChange('height', e.target.value)}
@@ -92,32 +92,32 @@ const DimensionInputs: React.FC<DimensionInputsProps> = ({
   const renderConicReductionInputs = () => (
     <div className="grid grid-cols-3 gap-4">
       <div>
-        <label className="block text-sm font-medium mb-1">Raio Superior (m)</label>
+        <label className="block text-sm font-medium mb-1">Diâmetro Superior (mm)</label>
         <input
           type="number"
-          step="0.1"
+          step="1"
           min="0"
-          value={shape.dimensions.topRadius || ''}
-          onChange={(e) => handleInputChange('topRadius', e.target.value)}
+          value={shape.dimensions.topDiameter || ''}
+          onChange={(e) => handleInputChange('topDiameter', e.target.value)}
           className="input-field"
         />
       </div>
       <div>
-        <label className="block text-sm font-medium mb-1">Raio Inferior (m)</label>
+        <label className="block text-sm font-medium mb-1">Diâmetro Inferior (mm)</label>
         <input
           type="number"
-          step="0.1"
+          step="1"
           min="0"
-          value={shape.dimensions.bottomRadius || ''}
-          onChange={(e) => handleInputChange('bottomRadius', e.target.value)}
+          value={shape.dimensions.bottomDiameter || ''}
+          onChange={(e) => handleInputChange('bottomDiameter', e.target.value)}
           className="input-field"
         />
       </div>
       <div>
-        <label className="block text-sm font-medium mb-1">Altura (m)</label>
+        <label className="block text-sm font-medium mb-1">Altura (mm)</label>
         <input
           type="number"
-          step="0.1"
+          step="1"
           min="0"
           value={shape.dimensions.height || ''}
           onChange={(e) => handleInputChange('height', e.target.value)}
@@ -130,10 +130,10 @@ const DimensionInputs: React.FC<DimensionInputsProps> = ({
   const renderCubeInputs = () => (
     <div className="grid grid-cols-3 gap-4">
       <div>
-        <label className="block text-sm font-medium mb-1">Largura (m)</label>
+        <label className="block text-sm font-medium mb-1">Largura (mm)</label>
         <input
           type="number"
-          step="0.1"
+          step="1"
           min="0"
           value={shape.dimensions.width || ''}
           onChange={(e) => handleInputChange('width', e.target.value)}
@@ -141,10 +141,10 @@ const DimensionInputs: React.FC<DimensionInputsProps> = ({
         />
       </div>
       <div>
-        <label className="block text-sm font-medium mb-1">Altura (m)</label>
+        <label className="block text-sm font-medium mb-1">Altura (mm)</label>
         <input
           type="number"
-          step="0.1"
+          step="1"
           min="0"
           value={shape.dimensions.height || ''}
           onChange={(e) => handleInputChange('height', e.target.value)}
@@ -152,10 +152,10 @@ const DimensionInputs: React.FC<DimensionInputsProps> = ({
         />
       </div>
       <div>
-        <label className="block text-sm font-medium mb-1">Profundidade (m)</label>
+        <label className="block text-sm font-medium mb-1">Profundidade (mm)</label>
         <input
           type="number"
-          step="0.1"
+          step="1"
           min="0"
           value={shape.dimensions.depth || ''}
           onChange={(e) => handleInputChange('depth', e.target.value)}

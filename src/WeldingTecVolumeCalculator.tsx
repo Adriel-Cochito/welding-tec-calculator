@@ -22,7 +22,7 @@ const WeldingTecVolumeCalculator: React.FC = () => {
       type: selectedShape,
       dimensions: config.defaultDimensions,
       volume: calculateVolume(selectedShape, config.defaultDimensions),
-      isInverted: false
+      isInverted: selectedShape === 'cone' ? true : false
     };
     
     setShapes(prev => [...prev, newShape]);
