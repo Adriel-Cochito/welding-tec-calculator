@@ -3,13 +3,13 @@ import { ShapeType, Dimensions } from '../types';
 export const calculateVolume = (type: ShapeType, dimensions: Dimensions): number => {
   if (!dimensions) return 0;
   
-  // Converter milímetros para metros (dividir por 1000)
-  const radiusM = (dimensions.radius || 0) / 1000;
+  // Converter milímetros para metros e diâmetro para raio
+  const radiusM = ((dimensions.diameter || 0) / 2) / 1000; // diâmetro/2 depois mm→m
   const heightM = (dimensions.height || 0) / 1000;
   const widthM = (dimensions.width || 0) / 1000;
   const depthM = (dimensions.depth || 0) / 1000;
-  const topRadiusM = (dimensions.topRadius || 0) / 1000;
-  const bottomRadiusM = (dimensions.bottomRadius || 0) / 1000;
+  const topRadiusM = ((dimensions.topDiameter || 0) / 2) / 1000; // diâmetro/2 depois mm→m
+  const bottomRadiusM = ((dimensions.bottomDiameter || 0) / 2) / 1000; // diâmetro/2 depois mm→m
   
   switch(type) {
     case 'cylinder':

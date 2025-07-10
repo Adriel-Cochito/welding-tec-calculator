@@ -3,8 +3,11 @@ export interface Dimensions {
   height?: number;
   width?: number;
   depth?: number;
-  topRadius?: number; // Para redução cônica
-  bottomRadius?: number; // Para redução cônica
+  topRadius?: number;
+  bottomRadius?: number;
+  diameter?: number; // Para cilindro e cone
+  topDiameter?: number; // Para redução cônica
+  bottomDiameter?: number; // Para redução cônica
 }
 
 export type ShapeType = 'cylinder' | 'cone' | 'cube' | 'conicReduction';
@@ -14,7 +17,7 @@ export interface Shape {
   type: ShapeType;
   dimensions: Dimensions;
   volume: number;
-  isInverted?: boolean; // Para cones invertidos
+  isInverted?: boolean;
 }
 
 export interface ShapeConfig {

@@ -4,12 +4,12 @@ export const shapeConfigs: ShapeConfig[] = [
   {
     type: 'cylinder',
     displayName: 'Cilindro',
-    defaultDimensions: { radius: 1000, height: 2000 }
+    defaultDimensions: { diameter: 2000, height: 2000 }
   },
   {
     type: 'cone',
     displayName: 'Cone',
-    defaultDimensions: { radius: 1000, height: 2000 }
+    defaultDimensions: { diameter: 2000, height: 2000 }
   },
   {
     type: 'cube',
@@ -19,6 +19,6 @@ export const shapeConfigs: ShapeConfig[] = [
   {
     type: 'conicReduction',
     displayName: 'Redução Cônica',
-    defaultDimensions: { topRadius: 1500, bottomRadius: 1000, height: 2000 }
+    defaultDimensions: { topDiameter: 3000, bottomDiameter: 2000, height: 2000 }
   }
 ];
