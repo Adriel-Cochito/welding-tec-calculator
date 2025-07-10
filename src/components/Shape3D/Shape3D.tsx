@@ -8,7 +8,7 @@ interface Shape3DProps {
 }
 
 const Shape3D: React.FC<Shape3DProps> = ({ type, dimensions, isInverted = false }) => {
-  const scale = 50;
+  const scale = 0.05;
   const centerX = 150;
   const centerY = 150;
 
